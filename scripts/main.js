@@ -23,7 +23,7 @@ function prev() {
 }
 
 function next() {
-  sliderBG.scrollBy(-319, 0);
+  sliderBG.scrollBy(-315, 0);
 
   dotCount--;
 
