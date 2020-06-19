@@ -16,14 +16,15 @@ function prev() {
   };
 
   dot();
+  console.log("prev -> sliderBG.scrollLeft", sliderBG.scrollLeft)
 
-  if (sliderBG.scrollLeft >= (920)) {
+  if (sliderBG.scrollLeft >= (950)) {
     sliderBG.scrollTo(0, 0);
   }
 }
 
 function next() {
-  sliderBG.scrollBy(-315, 0);
+  sliderBG.scrollBy(-320, 0);
 
   dotCount--;
 
@@ -34,7 +35,7 @@ function next() {
   dot();
 
   if (sliderBG.scrollLeft <= 0) {
-    sliderBG.scrollTo((320 * 3), 0);
+    sliderBG.scrollTo(960, 0);
   }
 }
 
